@@ -48,7 +48,7 @@ const Projects = () => {
         {/* project slider container  */}
 
         <div className='overflow-hidden'>
-            <div className='flex gap-8 transition-transform duration-500 ease-in-out' style={{transform : `translateX(-${(currentIndex*10)/cardsToShow}%)`}}>
+            <div className='flex gap-8 transition-transform duration-500 ease-in-out' style={{transform : `translateX(-${(currentIndex*100)/cardsToShow}%)`}}>
                 {projectsData.map((project,index)=>(                    
                     
                     <div key={index} className='relative flex-shrink-0 w-full sm:w-1/4'>
